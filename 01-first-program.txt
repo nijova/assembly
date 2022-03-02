@@ -1,0 +1,9 @@
+6502
+
+prefix $ for hex numbers
+prefix # for literal number value
+any other number refers to memory location
+
+the instruction LDA #$01 loads the hex value $01 into register A
+the instruction STA $0200 stores the value of the A register to memory location $0200
+
