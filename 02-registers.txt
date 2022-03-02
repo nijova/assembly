@@ -1,0 +1,9 @@
+A, X and Y registers (A is often called the “accumulator”). Each register holds a single byte. Most operations work on the contents of these registers.
+
+SP stackpointer: this register is decremented every time a byte is pushed onto the stack, and incremented when a byte is popped off the stack.
+
+PC programcounter: how the processor knows at what point in the program it currently is.
+
+
+
+
