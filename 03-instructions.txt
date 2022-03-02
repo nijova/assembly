@@ -1,0 +1,11 @@
+LDA #$c0  ;Load the hex value $c0 into the A register
+TAX       ;Transfer the value in the A register to X
+INX       ;Increment the value in the X register
+ADC #$c4  ;Add the hex value $c4 to the A register
+BRK       ;Break - we're done
+
+Distinction between ADC #$01 and ADC $01. The first one adds the value $01 to the A register, but the second adds the value stored at memory location $01 to the A register.
+
+STA $01 stores the value of the A register at memory location $01
+ADC $01 adds the value stored at the memory location $01 to the A register
+
