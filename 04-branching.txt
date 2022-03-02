@@ -1,0 +1,11 @@
+BNE: Branch on not equal
+
+CPX compares the value in the X register with another value, CPX #$03
+ If the two values are equal, the Z flag is set to 1, otherwise it is set to 0.
+
+BNE label will shift execution to the label if the Z flag is set to 0 (meaning that the two values in the CPX comparison were not equal)
+
+Labels just mark certain points in a program so we can return to them later.
+
+The opposite of BNE is BEQ
+BCC and BCS (“branch on carry clear” and “branch on carry set”) are used to branch on the carry flag
