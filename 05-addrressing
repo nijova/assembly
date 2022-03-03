@@ -1,0 +1,30 @@
+absolute: $c000
+the full memory location is used as the argument
+
+zero page: $c0
+only the first page of memory is accessible
+
+zero page,X: $c0,X
+a zero page address is given, and then the value of the X register is added
+zero page,Y: $c0,Y
+
+absolute,X and absolute,Y: $c000,X and $c000,Y
+absolute addressing versions of zero page,X and zero page,Y
+
+immediate: #$c0
+actual values are used, very different to the zero page instruction
+
+relative: $c0 (or label)
+used for branching instructions. These instructions take a single byte, which is used as an offset from the following instruction.
+
+implicit
+instruction don’t deal with memory locations
+
+indirect: ($c000)
+uses an absolute address to look up another address. The first address gives the least significant byte of the address, and the following byte gives the most significant byte
+
+indexed indirect: ($c0,X)
+a cross between zero page,X and indirect. take the zero page address, add the value of the X register to it, then use that to look up a two-byte address
+
+indirect indexed: ($c0),Y
+the zero page address is dereferenced, and the Y register is added to the resulting address
