@@ -28,3 +28,5 @@ a cross between zero page,X and indirect. take the zero page address, add the va
 
 indirect indexed: ($c0),Y
 the zero page address is dereferenced, and the Y register is added to the resulting address
+
+we can define descriptive constants (or symbols) that represent numbers. The rest of the code can then simply use the constants instead of the literal number, which immediately makes it obvious what we’re dealing with
