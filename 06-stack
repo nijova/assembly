@@ -1,0 +1,4 @@
+stack lives in memory between $0100 and $01ff
+PHA and PLA, “push accumulator” and “pull accumulator”.
+
+
