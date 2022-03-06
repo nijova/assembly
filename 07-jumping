@@ -1,0 +1,7 @@
+jumps are not conditionally executed
+jumping is the only way to move from one section of the code to another
+
+JMP is an unconditional jump
+
+JSR and RTS (“jump to subroutine” and “return from subroutine”)
+basically like calling a function and returning
