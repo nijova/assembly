@@ -1,0 +1,15 @@
+N (bit 7)—Negative flag. The N flag matches the high bit of the result of whatever operation the processor has just completed. If you load $FF (1111 1111) into the Y-register, for example, since the high bit of the Y-register is set, the N flag will be set, too. the high-order bit of a number is set to 1 if the number is negative, and cleared to 0 if it's positive, and that's where the N flag gets its name.
+
+V (bit 6)—Overflow flag.
+
+Bit 5 has no name, and is always set to 1. Since nothing can change it, it is of no use to the programmer.
+
+B (bit 4)—Break flag, set whenever a BRK instruction is executed, clear at all other times.
+
+D (bit 3)—Decimal flag. When D is set, the 6502 does its arithmetic in BCD, binary coded decimal.
+
+I (bit 2)—Interrupt mask. When this bit is set, the computer will not honor interrupts, such as those used for keyboard scanning in many computers.
+
+Z (bit 1)—Zero flag. when the result of any operation is zero. Load the X-register with $00, and you set the zero flag. Subtract $32 from $32, and you do the same. Many 6502 instructions affect the Z flag, and there's always a "zero or not-zero" aspect to it, but it's not always obvious when a zero condition exists. This is probably the most important of the flags.
+
+C (bit 0)—Carry flag. Carry is set whenever the accumulator rolls over from $FF to $00. It's also set by various rotation and comparison instructions. The carry flag is about as important as the Z flag.
